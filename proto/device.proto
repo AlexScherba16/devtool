@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option go_package = "./proto_generated";
+
+package devices;
+
+message Device {
+  string type = 1;
+  string path = 2;
+  string vid = 3;
+  string pid = 4;
+}
+
+message DeviceList {
+  repeated Device devices = 1;
+}
